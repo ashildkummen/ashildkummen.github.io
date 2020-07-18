@@ -15,6 +15,16 @@ body {
     color: var(--alabaster);
 }
 
+
+a {
+   color: var(--maize-crayola);
+   text-decoration: none;
+}
+
+a:hover {
+    font-weight: bold;
+}
+
 img {
     width: 300px;
 }
@@ -24,15 +34,16 @@ img {
 /* Profile
 -----------------------------------*/
 header{
-    background: var(--alabaster);
-    color: var(--jet);
+    background: var(--eerie-black);
 }
 
 
 /* Projects
 -----------------------------------*/
 .projects {
-    background: var(--eerie-black);
+    background: var(--alabaster);
+    color: var(--jet);
+
 }
 
 
@@ -41,8 +52,7 @@ header{
 /* Work Experience
 -----------------------------------*/
 .work-experience {
-    background: var(--maize-crayola);
-    color: var(--jet);
+    background: var(--jet);
 }
 
 
@@ -58,5 +68,18 @@ header{
 /* Contact Info
 -----------------------------------*/
 footer {
+    background: var(--maize-crayola);
+    color: var(--jet);
+}
+
+.btn {
     background: var(--jet);
+    color: var(--alabaster);
+    text-decoration: none;
+    padding: 8px;
+    border-radius: 4px;
+}
+
+.btn:hover {
+    padding: 10px;
 }
