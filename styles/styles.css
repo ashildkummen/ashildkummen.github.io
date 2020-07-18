@@ -1,4 +1,12 @@
 body {
-  text-align: center;
-  background-color: #f0e8c5;
+  background-color: lightblue;
+}
+
+h1 {
+  color: white;
+  margin-left: 20px;
+}
+
+img {
+    width: 300px;
 }
