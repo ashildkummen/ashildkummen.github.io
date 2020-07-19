@@ -11,9 +11,29 @@ https://coolors.co/cfdbd5-e8eddf-f5cb5c-242423-333533 */
 
 /* Global Styles
 -----------------------------------*/
+
+/* Adding box model fix */
+html {
+  box-sizing: border-box;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+/*** Change highligting colour */
+::selection {
+    background-color: var(--maize-crayola);
+}
+
 body {
     color: var(--alabaster);
+    background: var(--eerie-black);
+    margin: 0 0;
+    padding: 5% 0;
+    font: 1em 'Montserrat', sans-serif; /** Font for body */
+    line-height: 1.5;
 }
+
 
 
 a {
@@ -25,17 +45,46 @@ a:hover {
     font-weight: bold;
 }
 
+h1 {
+    font: 2.5em 'Titan One', sans-serif; /* setting font */
+    color: var(--maize-crayola);
+}
+
+h2 {
+    margin: 0;
+    font: 2em 'Roboto', cursive; /* setting font */
+    line-height: 0.5;
+}
+
+h3 {
+    font: italic 1.5em 'Roboto', cursive; /* setting font */
+}
+
 img {
     width: 300px;
 }
 
+
+.content-wrap {
+    width: 800px;
+    margin: 0 auto;
+    padding: 60px 0;
+}
 
 
 /* Profile
 -----------------------------------*/
 header{
     background: var(--eerie-black);
+    position:fixed;
+    top: 0px;
+    display: block;
+    width: 100%;
+    padding: 0 5%;
 }
+
+
+
 
 
 /* Projects
@@ -43,10 +92,23 @@ header{
 .projects {
     background: var(--alabaster);
     color: var(--jet);
-
 }
 
 
+.project-item {
+    overflow: hidden;
+    border-top: 1px dashed grey;
+    padding: 25px 0;
+}
+
+.project-item img {
+    float: left;
+    margin-right: 4%;
+}
+
+.project-item h3 {
+    margin-top: 0;
+}
 
 
 /* Work Experience
@@ -78,6 +140,9 @@ footer {
     text-decoration: none;
     padding: 8px;
     border-radius: 4px;
+    display: inline-block;
+    width: 120px;
+    margin: 15px;
 }
 
 .btn:hover {
