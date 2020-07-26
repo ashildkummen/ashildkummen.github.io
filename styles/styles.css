@@ -30,23 +30,14 @@ html {
 }
 
 
-/* links */
-a {
-   color: var(--black);
-   text-decoration: none;
-}
-
-a:hover {
-    font-weight: bold;
-}
 
 /* typography */
 h1 {
-    font: 1.8em 'Montserrat', bold; /* setting font */
+    font: 2em 'Montserrat', bold; /* setting font */
 }
 
 h2 {
-    font: 1.2em 'Montserrat', bold; /* setting font */
+    font: 1.5em 'Montserrat', bold; /* setting font */
 }
 
 h3 {
@@ -58,6 +49,20 @@ body {
     font: 1em 'Roboto', Light, sans-serif; /** Font for body */
     margin: 0 0;
 }
+
+
+/* links */
+a {
+   color: var(--black);
+   text-decoration: none;
+}
+
+a:hover {
+    font-weight: bold;
+    font-size: 1.1em;
+}
+
+
 
 html { /*setting background photo */
     background: url(../images/mountainbg.jpg) no-repeat center center fixed;
@@ -79,10 +84,10 @@ html { /*setting background photo */
 .box-container:before {
   content: " ";
   position: absolute;
-  top: 20px;;
-  left: 20px;
-  right: -20px;
-  bottom: -20px;
+  top: 7%;
+  left: 5%;
+  right: -5%;
+  bottom: -7%;
   background-color: var(--mediumpink);
   border: 1px solid var(--black);
   z-index: -1;
@@ -146,30 +151,40 @@ header .line-decor {
 -----------------------------------*/
 
 .blog {
-    min-height: 1200px;
+    min-height: 700px;
     padding-top: 100px;
+    margin: 0 10%;
 }
+
 .blog h1 {
     font-size:5em;
     color: var(--pinkwhite);
-    margin: 0 10%;
     text-decoration: underline solid var(--black);
 }
 
 .blog-grid {
-    margin: 2.5% 10%;
+    margin: 2.5% 0;
     display: grid;
-    grid-gap: 5%;
-    grid-template-columns: repeat(1,1fr);
-    grid-template-rows: repeat(3,1fr);
-    min-height: 100px;
+    grid-gap: 10%;
+    grid-template-columns: repeat(2,1fr);
+    grid-template-rows: repeat(1,1fr);
+    min-height: 200px;
 }
 
-.blog-item .line-decor {
-  height: 120px;
-  width:20px;
+
+.blog-item:first-child .line-decor {
+  height: 100px;
+  width:15px;
   left: -20px;
-  top: -85px;
+  top: -60%;
+  transform: rotate(45deg);
+}
+
+.blog-item:last-child .line-decor {
+  height: 100px;
+  width:15px;
+  left: 100%;
+  top: -60%;
 }
 
 .blog .box-container:before {
@@ -183,16 +198,16 @@ header .line-decor {
     min-height:800px;
     display:block;
     padding: 20% 0;
+    margin: 0 10%;
 }
 .projects h1 {
     font-size:5em;
     color: var(--pinkwhite);
-    margin: 0 10%;
     text-decoration: underline solid var(--black);
 }
 
 .projects-grid {
-    margin: 5% 10%;
+    margin: 5% 0;
     display: grid;
     grid-gap: 5%;
     grid-template-columns: repeat(3,1fr);
@@ -212,7 +227,7 @@ header .line-decor {
   height: 110px;
   width:15px;
   left: 100%;
-  top: -50%;
+  top: -55%;
 }
 
 .projects .box-container:before {
@@ -222,7 +237,7 @@ header .line-decor {
 /* Contact
 -----------------------------------*/
 .contact  {
-    height:180px;
+    height:230px;
     background-color: var(--pinkwhite);
     text-align: center;
 }
@@ -232,7 +247,7 @@ header .line-decor {
 }
 
 .contact img{
-    width:30px;
+    height:30px;
 }
 
 .contact-list {
@@ -243,22 +258,78 @@ header .line-decor {
     align-items: top;
 }
 
-.contact-list a{
-    width:30px;
-}
 
 .contact-list a:hover img {
-    width:40px;
-    margin-left:-5px;
-    margin-top:-5px;
+    height:40px;
+    margin-left:-2px;
+    margin-top:-10px;
 }
+
+
 
 /* Media styles
 -----------------------------------*/
 
-/* 600px and smaller */
-@media screen and (min-width: 700px) {
+/* 1150px and smaller */
+@media screen and (max-width: 1100px) {
+    .projects {
+        margin: 0 4%;
+    }
 
+    .blog {
+        margin: 0 4%;
+    }
+}
+
+@media screen and (max-width: 900px) {
+    .projects-grid {
+        grid-template-columns: repeat(1,1fr);
+        grid-template-rows: repeat(3,1fr);
+        min-height: 100px;
+    }
+    .blog-grid {
+        grid-template-columns: repeat(1,1fr);
+        grid-template-rows: repeat(2,1fr);
+        min-height: 100px;
+    }
+}
+
+@media screen and (max-width: 500px) {
+
+    body {
+        font-size: 0.7em;
+    }
+
+    header {
+        min-height: 460px;
+    }
+
+    header .box-container {
+        margin-left: -40%;
+        margin-top: -50%;
+        width: 80%;
+        height: 50%;
+        display: block-inline;
+     }
+
+     .blog h1 {
+        text-align: center;
+        margin: 5% 0;
+     }
+
+     .projects h1 {
+        text-align: center;
+        margin: 5% 0;
+     }
+
+     .contact {
+        margin-top: 20%;
+        height:150px;
+     }
+
+     .contact .contact-list {
+        margin: 0 40%;
+     }
 
 
 }

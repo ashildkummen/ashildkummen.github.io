@@ -2,17 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d1764ec4-ef73-4b3c-a90a-a5481ce02ad5" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/Icon" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/annie-spratt-unsplash.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/joanna-kosinska-unsplash.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/photo-credits.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/profile1.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/profile1.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/sharon-mccutcheon-unsplash.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/thumbnail-1.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/thumbnail-2.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/thumbnail-3.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/email.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/github.png" beforeDir="false" afterPath="$PROJECT_DIR$/images/github.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/linkedin.png" beforeDir="false" afterPath="$PROJECT_DIR$/images/linkedin.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/profile.png" beforeDir="false" afterPath="$PROJECT_DIR$/images/profile.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/styles/styles.css" beforeDir="false" afterPath="$PROJECT_DIR$/styles/styles.css" afterDir="false" />
     </list>
@@ -27,8 +20,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="299">
-              <caret line="22" column="46" selection-start-line="22" selection-start-column="46" selection-end-line="22" selection-end-column="46" />
+            <state relative-caret-position="725">
+              <caret line="87" column="12" selection-start-line="87" selection-start-column="12" selection-end-line="87" selection-end-column="12" />
             </state>
           </provider>
         </entry>
@@ -36,8 +29,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/styles/styles.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="311">
-              <caret line="201" lean-forward="true" selection-start-line="201" selection-end-line="201" />
+            <state relative-caret-position="657">
+              <caret line="332" selection-start-line="332" selection-end-line="332" />
             </state>
           </provider>
         </entry>
@@ -63,6 +56,11 @@
       <find>height:</find>
       <find>box-s</find>
       <find>cv</find>
+      <find>blog</find>
+      <find>transfor</find>
+      <find>project 2</find>
+      <find>gap</find>
+      <find>min</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -77,7 +75,7 @@
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds">
+  <component name="ProjectFrameBounds" extendedState="6" fullScreen="true">
     <option name="x" value="437" />
     <option name="width" value="1003" />
     <option name="height" value="900" />
@@ -160,10 +158,10 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="437" y="0" width="1003" height="900" extended-state="0" />
+    <frame x="0" y="0" width="1440" height="900" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" weight="0.26808175" />
+      <window_info content_ui="combo" id="Project" order="0" weight="0.26779422" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -216,15 +214,15 @@
     <entry file="file://$PROJECT_DIR$/images/sharon-mccutcheon-unsplash.jpg" />
     <entry file="file://$PROJECT_DIR$/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="299">
-          <caret line="22" column="46" selection-start-line="22" selection-start-column="46" selection-end-line="22" selection-end-column="46" />
+        <state relative-caret-position="725">
+          <caret line="87" column="12" selection-start-line="87" selection-start-column="12" selection-end-line="87" selection-end-column="12" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/styles/styles.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="311">
-          <caret line="201" lean-forward="true" selection-start-line="201" selection-end-line="201" />
+        <state relative-caret-position="657">
+          <caret line="332" selection-start-line="332" selection-end-line="332" />
         </state>
       </provider>
     </entry>
