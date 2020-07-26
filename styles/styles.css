@@ -2,12 +2,16 @@
 COLOR PALETTE
 https://coolors.co/cfdbd5-e8eddf-f5cb5c-242423-333533 */
 :root {
---timberwolf: hsla(150, 14%, 84%, 1);
---alabaster: hsla(81, 28%, 90%, 1);
---maize-crayola: hsla(44, 88%, 66%, 1);
---eerie-black: hsla(60, 1%, 14%, 1);
---jet: hsla(120, 2%, 20%, 1);
+--darkblue: rgb(19,48,102);
+--pinkwhite: rgb(255,248,254);
+--mediumpink: rgb(255,219,246);
+--black: rgb(24,23,23);
+--darkpink: rgb(215,143,189);
 }
+/* fonts:
+font-family: 'Montserrat', sans-serif;
+font-family: 'Roboto', sans-serif;
+*/
 
 /* Global Styles
 -----------------------------------*/
@@ -20,24 +24,15 @@ html {
   box-sizing: inherit;
 }
 
-/*** Change highligting colour */
+/*** Change highlighting colour */
 ::selection {
-    background-color: var(--maize-crayola);
-}
-
-body {
-    color: var(--alabaster);
-    background: var(--eerie-black);
-    margin: 0 0;
-    padding: 5% 0;
-    font: 1em 'Montserrat', sans-serif; /** Font for body */
-    line-height: 1.5;
+    background-color: var(--mediumpink);
 }
 
 
-
+/* links */
 a {
-   color: var(--maize-crayola);
+   color: var(--black);
    text-decoration: none;
 }
 
@@ -45,106 +40,225 @@ a:hover {
     font-weight: bold;
 }
 
+/* typography */
 h1 {
-    font: 2.5em 'Titan One', sans-serif; /* setting font */
-    color: var(--maize-crayola);
+    font: 1.8em 'Montserrat', bold; /* setting font */
 }
 
 h2 {
-    margin: 0;
-    font: 2em 'Roboto', cursive; /* setting font */
-    line-height: 0.5;
+    font: 1.2em 'Montserrat', bold; /* setting font */
 }
 
 h3 {
-    font: italic 1.5em 'Roboto', cursive; /* setting font */
+    font: italic 1em 'Montserrat', bold cursive; /* setting font */
 }
 
-img {
-    width: 300px;
+body {
+    color: var(--black);
+    font: 1em 'Roboto', Light, sans-serif; /** Font for body */
+    margin: 0 0;
 }
 
-
-.content-wrap {
-    width: 800px;
-    margin: 0 auto;
-    padding: 60px 0;
+html { /*setting background photo */
+    background: url(../images/mountainbg.jpg) no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    background-attachment: fixed;
+    scroll-behavior: smooth;
 }
 
+.box-container {
+    position: relative;
+    padding: 30px;
+    background-color: var(--pinkwhite);
+    border: 1px solid var(--black);
+}
 
-/* Profile
+.box-container:before {
+  content: " ";
+  position: absolute;
+  top: 20px;;
+  left: 20px;
+  right: -20px;
+  bottom: -20px;
+  background-color: var(--mediumpink);
+  border: 1px solid var(--black);
+  z-index: -1;
+}
+
+.line-decor {
+  border-left: 4px solid var(--black);
+  border-right: 4px solid var(--black);
+  position: relative;
+  transform: rotate(-45deg);
+}
+
+/* Header
 -----------------------------------*/
-header{
-    background: var(--eerie-black);
-    position:fixed;
-    top: 0px;
-    display: block;
-    width: 100%;
-    padding: 0 5%;
+header {
+    min-height:800px;
 }
 
+header .box-container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width:30em;
+    height: 18em;
+    margin-top: -10em;
+    margin-left: -15em;
+    display: grid;
+    grid-gap: 20px;
+    grid-template-columns: 30% 70%;
+    grid-template-rows: 80% 20%;
+}
 
+header .box-container img{
+    width: 100%;
+    margin-right: 12px;
+    margin-left: -5px;
+    grid-column: 1;
+    grid-row: 1;
+}
 
+header .box-container h1, p {
+    grid-column: 2;
+    grid-row: 1;
+}
+
+header .box-container nav {
+    grid-column: 1/3;
+    grid-row: 2;
+    text-align: center;
+    font-size: 130%;
+}
+
+header .line-decor {
+  height: 120px;
+  width:20px;
+  left: -20px;
+  top: -85px;
+}
+
+/* Blog
+-----------------------------------*/
+
+.blog {
+    min-height: 1200px;
+    padding-top: 100px;
+}
+.blog h1 {
+    font-size:5em;
+    color: var(--pinkwhite);
+    margin: 0 10%;
+    text-decoration: underline solid var(--black);
+}
+
+.blog-grid {
+    margin: 2.5% 10%;
+    display: grid;
+    grid-gap: 5%;
+    grid-template-columns: repeat(1,1fr);
+    grid-template-rows: repeat(3,1fr);
+    min-height: 100px;
+}
+
+.blog-item .line-decor {
+  height: 120px;
+  width:20px;
+  left: -20px;
+  top: -85px;
+}
+
+.blog .box-container:before {
+    background-color: var(--darkpink);
+}
 
 
 /* Projects
 -----------------------------------*/
 .projects {
-    background: var(--alabaster);
-    color: var(--jet);
+    min-height:800px;
+    display:block;
+    padding: 20% 0;
+}
+.projects h1 {
+    font-size:5em;
+    color: var(--pinkwhite);
+    margin: 0 10%;
+    text-decoration: underline solid var(--black);
+}
+
+.projects-grid {
+    margin: 5% 10%;
+    display: grid;
+    grid-gap: 5%;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: repeat(1,1fr);
+    min-height: 300px;
+}
+
+.projects-item:first-child .line-decor {
+  height: 120px;
+  width:15px;
+  left: -7.5%;
+  top: 30%;
 }
 
 
-.project-item {
-    overflow: hidden;
-    border-top: 1px dashed grey;
-    padding: 25px 0;
+.projects-item:last-child .line-decor {
+  height: 110px;
+  width:15px;
+  left: 100%;
+  top: -50%;
 }
 
-.project-item img {
-    float: left;
-    margin-right: 4%;
+.projects .box-container:before {
+    background-color: var(--darkblue);
 }
 
-.project-item h3 {
-    margin-top: 0;
-}
-
-
-/* Work Experience
+/* Contact
 -----------------------------------*/
-.work-experience {
-    background: var(--jet);
+.contact  {
+    height:180px;
+    background-color: var(--pinkwhite);
+    text-align: center;
 }
 
+.contact h1{
+    padding-top: 2%;
+}
 
+.contact img{
+    width:30px;
+}
 
+.contact-list {
+    width:10%;
+    margin: 2% auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: top;
+}
 
-/* Education
+.contact-list a{
+    width:30px;
+}
+
+.contact-list a:hover img {
+    width:40px;
+    margin-left:-5px;
+    margin-top:-5px;
+}
+
+/* Media styles
 -----------------------------------*/
-.education {
-    background: var(--timberwolf);
-    color: var(--jet);
-}
 
-/* Contact Info
------------------------------------*/
-footer {
-    background: var(--maize-crayola);
-    color: var(--jet);
-}
+/* 600px and smaller */
+@media screen and (min-width: 700px) {
 
-.btn {
-    background: var(--jet);
-    color: var(--alabaster);
-    text-decoration: none;
-    padding: 8px;
-    border-radius: 4px;
-    display: inline-block;
-    width: 120px;
-    margin: 15px;
-}
 
-.btn:hover {
-    padding: 10px;
+
 }

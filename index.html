@@ -4,95 +4,99 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ashild Kummen</title>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,700;1,400&family=Roboto:ital,wght@0,100;1,100&family=Titan+One&display=swap" rel="stylesheet">
-    <link rel="stylesheet" type="text/css" href="styles/styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,700;1,700&family=Roboto:ital,wght@0,300;0,700;1,300;1,700&display=swap" rel="stylesheet">    <link rel="stylesheet" type="text/css" href="styles/styles.css">
 </head>
 <body>
 <main>
-    <!-- ***********************  ABOUT / PROFILE  *********************** -->
+    <!-- ***********************  ABOUT / NAV  *********************** -->
     <header>
-        <h1>åshild kummen</h1>
+        <div class="box-container">
+            <img src="images/profile.png" alt="picture of me">
+            <div class = "header-item">
+                <h1>Hi, I'm Ashild.</h1>
+                <p>I’m a BSc Psychology + <br>MSc Computer Science graduate looking for work in data science and AI.</p>
+            </div>
+            <nav class = "header-item">
+                <a href="#projects">- projects /</a>
+                <a href="#blog"> blog /</a>
+                <a href="#contact"> contact /</a>
+                <a href="images/ashild_cv.pdf"> resume -</a>
+            </nav>
+            <div class="line-decor"></div>
+        </div>
     </header>
 
-    <!-- ********************  PROJECTS / PORTFOLIO  ********************* -->
-    <section class="projects">
-        <div class="content-wrap">
+    <!-- ***********************  BLOG  ************************ -->
+    <section class="blog" id="blog">
+        <h1>Blog</h1>
+        <div class="underline"></div>
 
-            <h2>Featured Projects</h2>
-            <p>View selected projects below.</p>
+        <section class="blog-grid">
 
-
-
-            <!-- Project 1 -->
-            <section class="project-item">
-                <img src="images/thumbnail-1.jpg" alt="picture of me">
-                <h3>Project Name</h3>
-                <p>Summary or description of the project and/or your role in it. Add as many paragraphs as you need.</p>
-                <a href="#" target="_blank">View project / case study</a>
+            <!----- Article 1 ----->
+            <section class="blog-item box-container">
+                <h2>Article 1</h2>
+                <p>Write what this article is about.</p>
+                <div class="line-decor"></div>
             </section>
 
-             <!-- Project 2 -->
-            <section class="project-item">
-                <img src="images/thumbnail-2.jpg" alt="hm">
-                <h3>Project Name</h3>
-                <p>Summary or description of the project and/or your role in it. Add as many paragraphs as you need.</p>
-                <a href="#" target="_blank">View project / case study</a>
+            <!----- Article 2 ----->
+            <section class="blog-item box-container">
+                <h2>Project 2</h2>
+                <p>Write what this article is about.</p>
             </section>
 
-            <!-- End of Project block. -->
-        </div>
+            <!----- Article 3 ----->
+            <section class="blog-item box-container">
+                <h2>Article 3</h2>
+                <p>Write what this article is about.</p>
+                <div class="line-decor"></div>
+            </section>
+        </section>
     </section>
 
-    <!-- ***********************  WORK EXPERIENCE  *********************** -->
-    <section class="work-experience">
-        <div class="content-wrap">
-            <h2>Work Experience</h2>
-            <p>Optional paragraph for work experience summary. Not a part of the job details. Delete if not being used.</p>
 
-            <!-- Copy this whole <section> block to add more jobs. -->
-            <section>
-                <h3>Job title</h3>
-                <p>Company Name</p>
-                <p>Date at job</p>
-                <p>Job summary goes here. Add as many paragraphs as you need.</p>
-                <p>Optional list:</p>
-                <ul>
-                    <li>Delete this list if you don't need it.</li>
-                    <li>Created...</li>
-                    <li>Lead...</li>
-                    <li>Responsible for...</li>
-                </ul>
+    <!-- ***********************  PROJECTS  ************************ -->
+    <section class="projects" id="projects">
+        <h1>Projects</h1>
+        <div class="underline"></div>
+
+        <section class="projects-grid">
+
+            <!----- Project 1 ----->
+            <section class="projects-item box-container">
+                <h2>Project 1</h2>
+                <p>Write short description of project here</p>
+                <div class="line-decor"></div>
             </section>
-        </div>>
-        <!-- End of Job block. -->
+
+            <!----- Project 2 ----->
+            <section class="projects-item box-container">
+                <h2>Project 2</h2>
+                <p>Write short description of project here</p>
+            </section>
+
+            <!----- Project 3 ----->
+            <section class="projects-item box-container">
+                <h2>Project 3</h2>
+                <p>Write short description of project here</p>
+                <div class="line-decor"></div>
+            </section>
+        </section>
     </section>
 
-    <!-- ******************  EDUCATION & CERTIFICATIONS ****************** -->
-    <section class="education">>
-        <div class="content-wrap">
-            <h2>Education</h2>
 
-            <!-- Copy this whole <section> block to add more schools. -->
-            <section>
-                <h3>School name - City</h3>
-                <p>Designation received or program name, year attended</p>
-                <p>Summary or accomplishments.</p>
-            </section>
-            <!-- End of School block. -->
-        </div>
-    </section>
-
-    <!-- *****************  CONTACT INFO / SOCIAL MEDIA  ***************** -->
-    <footer>
-        <div class="content-wrap">
-            <h2>Let's Keep in Touch!</h2>
-
-            <!-- Social media and contact links. Add or remove any networks. -->
-            <a class = "btn" href="mailto:ashildkummen@gmail.com">ashildkummen@gmail.com</a></li>
-            <a class = "btn" href="#" target="https://www.linkedin.com/in/ashildkummen/">LinkedIn</a></li>
-            <a class = "btn" href="#" target="https://github.com/ashildkummen">GitHub</a></li>
+    <!-- ***********************  CONTACT  ************************ -->
+    <footer class="contact" id="contact">
+        <h1>Contact</h1>
+        <div class="contact-list">
+            <a href="https://www.linkedin.com/in/ashildkummen/"><img src="images/linkedin.png" alt="LinkedIn"></a> <!-- LinkedIn -->
+            <!--<a href=""><img src="images/github.png"></a> -->
+            <a href="ashildkummen@gmail.com"><img src="images/email.svg" alt="Email"></a> <!-- Email -->
         </div>
     </footer>
+
+
 </main>
 </body>
 </html>
