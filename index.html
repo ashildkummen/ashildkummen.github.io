@@ -4,7 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ashild Kummen</title>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,700;1,700&family=Roboto:ital,wght@0,300;0,700;1,300;1,700&display=swap" rel="stylesheet">    <link rel="stylesheet" type="text/css" href="styles/styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,700;1,700&family=Roboto:ital,wght@0,300;0,700;1,300;1,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="styles/styles.css">
 </head>
 <body>
 <main>
@@ -13,16 +14,97 @@
         <div class="box-container">
             <img src="images/profile.png" alt="picture of me">
             <div class = "header-item">
-                <h1>Hi, I'm Ashild.</h1>
-                <p>This site is currently a work in progress... come back later!</p>
+                <h1>Hi, I'm Åshild.</h1>
+                <p>I’m a MSc Computer Science and <br>BSc Psychology graduate interested in everything software engineering, data analytics, and AI. </p>
+                <section class ='resume-container'>
+                    <p>You can find my CV here: </p>
+                    <a href="images/ashild_kummen.pdf"><img src="images/resumeicon.png" alt="resume"></a>
+                </section>
             </div>
             <nav class = "header-item">
-                <a href="images/ashild_cv.pdf">- my resume -</a>
+                <a href="#projects"> projects /</a>
+                <a href="#about"> about /</a>
+                <a href="#contact"> contact</a>
             </nav>
             <div class="line-decor"></div>
         </div>
     </header>
 
+    <!-- ***********************  PROJECTS  ************************ -->
+    <section class="projects" id="projects">
+
+
+        <section class="section-grid">
+            <h1>Featured Projects</h1>
+            <div class="underline"></div>
+            <!----- Project 1 ----->
+            <a class="section-item box-container" href="https://ashildkummen.github.io/traverse/" id="traverse">
+                <h2>TRAVERSE</h2>
+                <p>Submission to the UCL COVID-19 <br>Recovery Competition, which received<br> 2nd Place.
+                    An approach to mitigate <br>spread of Covid-19 in hospital settings <br>using advanced data science
+                    <br>technology.</p>
+            </a>
+
+            <!----- Project 2 ----->
+            <a class="section-item box-container" href="">
+                <h2>Project 2</h2>
+                <p>Write what this article is about.</p>
+            </a>
+
+             <!----- Project 3 ----->
+            <a class="section-item box-container"  href="">>
+                <h2>Project 3</h2>
+                <p>Write what this article is about.</p>
+            </a>
+
+        </section>
+    </section>
+
+    <!-- ***********************  ABOUT  ************************ -->
+    <section class="about" id="about">
+        <section class="about-container">
+            <h1>About Me</h1>
+            <section class="box1">
+                <h2>Education</h2>
+                <h3>MSc Computer Science | University College London</h3>
+                <p>(2020-2021)</p>
+                <p>The degree covers computer science theory as well as practical software engineering,
+                    including teamwork with industrial and research clients.  <ul>Relevant modules: Computer Architecture,
+                    Database and Information Management Systems, Algorithmics, App Engineering, Project Management,
+                    Software Engineering, Machine Learning for Domain Specialists. </ul> <ul>The thesis will be
+                    3-month industrial placement over the summer term with a UK-based company. </ul></p>
+                <h3>BSc Psychology | University College London | 1st with Distinction</h3>
+                <p>(2017-2020)</p>
+                <p>Embodied key theories on the underlying mechanisms of human behaviour.<ul>
+                Received Faculty Medal as part of <b>top 5%</b>, in terms of academic performance. </ul>
+                <ul>Relevant modules: Machine Learning for Behavioural Analytics, Advanced Multivariate Statistics.</ul>
+                Thesis: "Does environmental bias influence sensory detachment?" with Dr Lucie Charles and Prof Patrick Haggard. Designed experiments, collected data, and analysed data on unwanted perceptual influences on decision making and metacognitive awareness of such influences. Manuscript in prep (first author).
+                <ul> Awarded the UCL Henry Plotkins prize for <b>best undergraduate thesis 2020.</b> </ul>
+                </p>
+            </section>
+            <section class="box2">
+            <h2>Work Experience</h2>
+                <h3>Institute of Cognitive Neuroscience | University College London </h3>
+                <p>(2019-2020)</p>
+                <p>Involved in testing, data analysis, and pre-registration of research on language development and screen use in children 1-4 years old under the supervision of Dr Evelyne Mercure.
+                    Responsible for data pre- processing scripts to be submitted with the registered report. Manuscript in prep (second author).</p>
+                <h3>King’s College London Hospital</h3>
+                <p>(2019)</p>
+                <p>Assisted on writing and performed the statistical analysis of research on hardware failure in patients with
+                    diabetic foot surgery, led by Prof Venu Kavarthapu. Published in AOJ (doi: 10.21037/aoj.2020.01.06).</p>
+                <h3>Institute of Psychiatry | University College London</h3>
+                <p>(2018-2019)</p>
+                <p>Wrote blog posts summarising research on the environmental factors influencing psychotic disorders supervised by Dr James Kirkbride. Received significant positive feedback on social media (psylife.eu/blog).</p>
+                <!--<h2>Competitions</h2>
+                <h3>UCL COVID-19 Recovery Competition | 2nd Place</h3>
+                <p>(2020)</p>
+                <p>As part of a team of three, we developed an approach to mitigate spread of Covid-19 in hospitals
+                    with guidance from Dr Rebecca Pope from KPMG. The proposal was to employ a real-time tracking system
+                    where movement is recorded as a series of spatiotemporal events, and the data analysed to make causal inferences about when and where the virus spreads (Website: https://ashildkummen.github.io/traverse/).</p>
+                -->
+            </section>
+        </section>
+    </section>
 
     <!-- ***********************  CONTACT  ************************ -->
     <footer class="contact" id="contact">

@@ -169,16 +169,18 @@ header .box-container img{
     grid-row: 1;
 }
 
-header .box-container h1, p {
-    grid-column: 2;
-    grid-row: 1;
+header h1 {
+    margin-bottom: 0%;
+}
+header p {
+    margin-top: 2%;
 }
 
 header .box-container nav {
     grid-column: 1/3;
-    grid-row: 2;
     text-align: center;
     font-size: 130%;
+    justify-content: space-between;
 }
 
 header .line-decor {
@@ -194,12 +196,28 @@ header a:hover {
     font-size: 1.1em;
 }
 
+header .resume-container p {
+    float: left;
+    margin-top: -3%;
+}
+
+header .resume-container img {
+    width: 30px;
+    margin-top: -5%;
+    margin-left: 5%;
+}
+
+.resume-container a:hover img {
+    width: 40px;
+    margin-top: -6%;
+    margin-left: 4%;
+}
 
 
-/* Blog
+/* PROJECTS
 -----------------------------------*/
 
-.blog {
+.projects {
     min-height: 700px;
     padding-top: 100px;
     margin: 0 0;
@@ -211,91 +229,80 @@ header a:hover {
 }
 
 
-.blog h1 {
-    font-size:6em;
+.projects h1 {
+    font-size:3em;
     color: var(--pinkwhite);
     text-decoration: underline solid var(--black);
     grid-row: 1;
     grid-column: 1/3;
     top: 0;
     margin-block-start: 0;
+    margin-left: 2%
 }
 
 
-.blog .box-container:before {
+.projects .box-container:before {
     background-color: black;
 }
 
-.blog .box-container {
-    background: linear-gradient( rgba(19,48,102, 0.5), rgba(19,48,102, 0.5) ), url(../images/mountainbg.jpg);
+.projects .box-container {
+    background-color: var(--darkblue);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
-
 }
 
-.blog img{
+.projects img{
     width:100px;
 }
 
-.blog .section-item {
+.projects .section-item {
     text-align: center;
     padding-top: 15%;
 }
 
+.projects p {
+    color: var(--pinkwhite);
+    margin-top: 2%;
+}
 
+.projects h2 {
+    color: var(--pinkwhite);
+    margin-bottom: 0%;
+}
 
-/* Projects
+.projects #traverse{
+    background: linear-gradient( rgba(19,48,102, 0.7), rgba(19,48,102, 0.7) ), url(../images/traverse.jpg);
+}
+
+/* ABOUT
 -----------------------------------*/
-.projects {
-    min-height:800px;
-    padding: 20% 0;
-    background: linear-gradient(to top, rgba(255,248,254,1), rgba(255,248,254,0.5));
+
+.about {
+    min-height: 700px;
+    padding-top: 100px;
+    margin: 0 0;
+    background: linear-gradient(to top, rgba(255,248,254,1.0), rgba(255,248,254,0.5));
     position: relative;
     width: 100%;
-    height: 100%;
+    height: 1000px;
     z-index: 0;
 }
-.projects h1 {
-    font-size:6em;
-    color: var(--black);
-    text-decoration: underline solid var(--darkblue);
+
+.about-container {
+    margin: 0 10%;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-template-rows: 150px 400px;
+    gap: 4%;
+}
+
+.about h1 {
+    font-size:3em;
+    color: var(--darkblue);
+    text-decoration: underline solid var(--pinkwhite);
     grid-row: 1;
     grid-column: 1/3;
-    top: 0;
-    margin-block-start: 0;
-}
-
-
-.projects-item:first-child .line-decor {
-  height: 120px;
-  width:15px;
-  left: -7.5%;
-  top: 30%;
-}
-
-
-.projects-item:last-child .line-decor {
-  height: 110px;
-  width:15px;
-  left: 100%;
-  top: -55%;
-}
-
-
-
-.projects .box-container:before {
-    background-color: var(--darkblue);
-}
-
-
-.projects-item:hover {
-    margin: 0% 0%;
-}
-
-.projects h3 {
-    color: var(--darkblue);
-    text-shadow: white 3px 3px;
 }
 
 
@@ -343,7 +350,7 @@ header a:hover {
         margin: 0 4%;
     }
 
-    .blog {
+    .projects {
         margin: 0 4%;
     }
 }
@@ -354,7 +361,7 @@ header a:hover {
         grid-template-rows: repeat(3,1fr);
         min-height: 100px;
     }
-    .blog-grid {
+    .projects-grid {
         grid-template-columns: repeat(1,1fr);
         grid-template-rows: repeat(2,1fr);
         min-height: 100px;
@@ -383,7 +390,7 @@ header a:hover {
         font-size: 1.4em;
      }
 
-     .blog h1 {
+     .projects h1 {
         text-align: center;
         margin: 5% 0;
      }
